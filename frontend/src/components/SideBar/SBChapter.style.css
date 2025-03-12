@@ -1,0 +1,18 @@
+.sb-chapter {
+	width: 100%;
+	&:focus {
+		background-color: #c10f1a;
+	}
+	transition: 0.3s;
+}
+.sbc-icon {
+	height: 24px;
+}
+.sbc-btn {
+	height: 10px;
+}
+.sbc-title {
+	font-size: 16px;
+	font-weight: normal;
+	width: 306px;
+}
