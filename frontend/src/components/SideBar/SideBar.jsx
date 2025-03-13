@@ -6,7 +6,7 @@ import SBChapter from './SBChapter'
 const SideBar = ({}) => {
 	return (
 		<>
-			<aside className='flex flex-col w-106 h-screen justify-between'>
+			<aside className='flex flex-col w-1/5 h-screen justify-between'>
 				<div className='sb-top flex flex-col'>
 					<img src='logo.svg' alt='' className='sb-logo' />
 					<h1 className='sb-title text-white'>Управление</h1>

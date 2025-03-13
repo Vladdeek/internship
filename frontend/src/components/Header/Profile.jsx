@@ -5,11 +5,11 @@ import PSBtn from './PSBtn'
 
 const Profile = ({ userName, userId, image_path }) => {
 	const [isSettingsOpen, setIsSettingsOpen] = useState(false)
-	const [borderColor, setBorderColor] = useState('') // Состояние для цвета border
+	const [borderColor, setBorderColor] = useState('')
 
 	const toggleSettings = () => {
 		setIsSettingsOpen(!isSettingsOpen)
-		setBorderColor(isSettingsOpen ? '#696969' : '#820000') // Меняем цвет рамки
+		setBorderColor(isSettingsOpen ? '#696969' : '#820000')
 	}
 
 	return (
