@@ -15,9 +15,9 @@ const MainPage = ({}) => {
 		<>
 			<div className='flex'>
 				<SideBar />
-				<div className='flex flex-col items-center'>
+				<div className='w-4/5'>
 					<Header />
-					<div className=''>
+					<div className=' flex flex-col items-center'>
 						<Accordion
 							title='Основные данные'
 							isOpen={activeIndex === 0}
