@@ -11,7 +11,7 @@ const SBChapter = ({ image_path, title }) => {
 			>
 				<img src={image_path} alt='' className='sbc-icon' />
 				<p className='sbc-title text-white text-start mx-6'>{title}</p>
-				<img src='icons/sbc-btn.svg' alt='' className='sbc-btn' />
+				<img src='icons/vector.svg' alt='' className='sbc-btn' />
 			</div>
 		</>
 	)

@@ -1,0 +1,17 @@
+.profile {
+	background-color: white;
+}
+.p-user-name {
+	font-size: 14px;
+}
+.p-user-id {
+	font-size: 14px;
+	opacity: 0.5;
+}
+.p-btn {
+	transform: rotate(90deg);
+	filter: invert(1);
+}
+.p-image {
+	border-radius: 50%;
+}

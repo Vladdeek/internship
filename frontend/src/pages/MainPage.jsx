@@ -3,11 +3,7 @@ import '../style/pages/MainPage.style.css'
 import SideBar from '../components/SideBar/SideBar'
 
 const MainPage = ({}) => {
-	return (
-		<>
-			<SideBar />
-		</>
-	)
+	return <></>
 }
 
 export default MainPage
