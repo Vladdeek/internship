@@ -3,7 +3,7 @@ import './Accordion.style.css'
 
 const Accordion = ({ title, children, isOpen, onToggle }) => {
 	return (
-		<div className='bg-white w-2/3 mt-4 '>
+		<div className='bg-white w-full lg:w-2/3 mt-4'>
 			<div
 				className='accordion w-full flex p-4 cursor-pointer'
 				onClick={onToggle} // Меняем состояние при клике

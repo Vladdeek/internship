@@ -15,7 +15,7 @@ const Profile = ({ userName, userId, image_path }) => {
 	return (
 		<>
 			<div
-				className='profile absolute right-4 top-3'
+				className='profile absolute right-4 top-3 z-10'
 				style={{
 					borderColor: borderColor,
 					borderWidth: '1px',

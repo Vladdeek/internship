@@ -3,20 +3,20 @@ import React from 'react'
 import './Header.style.css'
 import Profile from './Profile'
 
-const Header = ({}) => {
+const Header = ({ burger_btn, toggleMenu, isMenuOpen }) => {
 	return (
-		<>
-			<header className='flex ml-4 h-23 px-8 w-full justify-between'>
-				<h1 className='h-title self-center'>
-					Личный кабинет абитуриента МелГУ
-				</h1>
-				<Profile
-					userName='Владислав Рязанов'
-					userId='9438513402'
-					image_path=''
-				/>
-			</header>
-		</>
+		<header className='flex m-0 lg:ml-4 h-23 px-8 w-full justify-between'>
+			<img
+				className='lg:hidden h-8 self-center cursor-pointer'
+				src={isMenuOpen ? 'icons/cross.svg' : burger_btn}
+				alt='menu'
+				onClick={toggleMenu}
+			/>
+			<h1 className='max-lg:hidden h-title self-center'>
+				Личный кабинет абитуриента МелГУ
+			</h1>
+			<Profile userName='Владислав Рязанов' userId='9438513402' image_path='' />
+		</header>
 	)
 }
 
