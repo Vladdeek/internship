@@ -30,14 +30,24 @@ const MainPage = () => {
 	return (
 		<div className='flex'>
 			<SideBar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+			<div className='lg:w-1/5 max-lg:hidden'></div>
 			<div className='w-full lg:w-4/5'>
 				<Header
 					burger_btn={isMenuOpen ? 'icons/cross.svg' : 'icons/burger.svg'}
 					toggleMenu={toggleMenu}
 					isMenuOpen={isMenuOpen}
 				/>
-				{isMenuOpen && <BurgerMenu />}
-				{content}
+				{isMenuOpen ? (
+					<BurgerMenu
+						activeIndex={activeIndex}
+						setActiveIndex={index => {
+							setActiveIndex(index)
+							setIsMenuOpen(false)
+						}}
+					/>
+				) : (
+					content
+				)}
 			</div>
 		</div>
 	)
