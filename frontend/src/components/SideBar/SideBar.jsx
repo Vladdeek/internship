@@ -1,9 +1,13 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './SideBar.style.css'
 import SBChapter from './SBChapter'
 
-const SideBar = ({}) => {
+const SideBar = ({ activeIndex, setActiveIndex }) => {
+	const handleToggle = index => {
+		setActiveIndex(index)
+	}
 	return (
 		<>
 			<aside className='hidden lg:flex flex-col w-1/5 h-screen justify-between overflow-y-auto'>
@@ -12,24 +16,45 @@ const SideBar = ({}) => {
 					<h1 className='sb-title text-white'>Управление</h1>
 					<h2 className='sb-subtitle text-white'>Основные</h2>
 					<div className='chapter-main my-2'>
-						<SBChapter title='Основные данные' image_path='icons/icon1.svg' />
+						<SBChapter
+							title='Основные данные'
+							image_path='icons/icon1.svg'
+							isOpen={activeIndex === 0}
+							onToggle={() => handleToggle(0)}
+						/>
 						<SBChapter
 							title='Индивидуальные достижения'
 							image_path='icons/icon2.svg'
+							isOpen={activeIndex === 1}
+							onToggle={() => handleToggle(1)}
 						/>
 						<SBChapter
 							title='Направление поступления'
 							image_path='icons/icon3.svg'
+							isOpen={activeIndex === 2}
+							onToggle={() => handleToggle(2)}
 						/>
 						<SBChapter
 							title='Дополнительные файлы'
 							image_path='icons/icon4.svg'
+							isOpen={activeIndex === 3}
+							onToggle={() => handleToggle(3)}
 						/>
-						<SBChapter title='Конкурсные списки' image_path='icons/icon5.svg' />
+						<SBChapter
+							title='Конкурсные списки'
+							image_path='icons/icon5.svg'
+							isOpen={activeIndex === 4}
+							onToggle={() => handleToggle(4)}
+						/>
 					</div>
 					<h2 className='sb-subtitle text-white'>Дополнительные</h2>
 					<div className='chapter-advance my-2'>
-						<SBChapter title='Обратная связь' image_path='icons/icon6.svg' />
+						<SBChapter
+							title='Обратная связь'
+							image_path='icons/icon6.svg'
+							isOpen={activeIndex === 5}
+							onToggle={() => handleToggle(5)}
+						/>
 					</div>
 				</div>
 				<div className='sb-bottom flex flex-col'>
