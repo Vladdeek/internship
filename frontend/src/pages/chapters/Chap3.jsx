@@ -5,7 +5,7 @@ const Chapter3 = () => {
 	return (
 		<>
 			<div className='flex flex-col items-center max-lg:px-3'>
-				<div className='lg:w-2/3 mt-13'>
+				<div className='lg:w-2/3 w-full mt-13'>
 					<p className='text-xl m-5'>Выберите основание поступления</p>
 					<div className='bg-white h-103 p-5 flex flex-col justify-between'>
 						<div className='flex w-full gap-2'>
