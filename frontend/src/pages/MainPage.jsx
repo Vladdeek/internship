@@ -8,9 +8,12 @@ import Chapter3 from './chapters/Chap3'
 import Chapter4 from './chapters/Chap4'
 import Chapter5 from './chapters/Chap5'
 import Chapter6 from './chapters/Chap6'
+import ModalWindow from '../components/ModalWindow/ModalWindow'
+import ModWinCon1 from '../components/ModalWindow/ModWinContent/ModWinContent1'
 
 const MainPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const [isModalOpen, setIsModalOpen] = useState(false)
 	const [activeIndex, setActiveIndex] = useState(0)
 
 	const chapters = [
@@ -21,35 +24,47 @@ const MainPage = () => {
 		<Chapter5 />,
 		<Chapter6 />,
 	]
-	const content = chapters[activeIndex]
+	const ModalContent = [<ModWinCon1 />]
 
 	const toggleMenu = () => {
 		setIsMenuOpen(prevState => !prevState)
 	}
+	const toggleModal = () => {
+		setIsModalOpen(prevState => !prevState)
+	}
 
 	return (
-		<div className='flex'>
-			<SideBar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
-			<div className='lg:w-1/5 max-lg:hidden'></div>
-			<div className='w-full lg:w-4/5'>
-				<Header
-					burger_btn={isMenuOpen ? 'icons/cross.svg' : 'icons/burger.svg'}
-					toggleMenu={toggleMenu}
-					isMenuOpen={isMenuOpen}
-				/>
-				{isMenuOpen ? (
-					<BurgerMenu
-						activeIndex={activeIndex}
-						setActiveIndex={index => {
-							setActiveIndex(index)
-							setIsMenuOpen(false)
-						}}
+		<>
+			<ModalWindow
+				modal_title='Выберите документ'
+				toggleModal={toggleModal}
+				isModalOpen={isModalOpen}
+			>
+				{ModalContent[0]}
+			</ModalWindow>
+			<div className='flex'>
+				<SideBar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+				<div className='lg:w-1/5 max-lg:hidden'></div>
+				<div className='w-full lg:w-4/5'>
+					<Header
+						burger_btn={isMenuOpen ? 'icons/cross.svg' : 'icons/burger.svg'}
+						toggleMenu={toggleMenu}
+						isMenuOpen={isMenuOpen}
 					/>
-				) : (
-					content
-				)}
+					{isMenuOpen ? (
+						<BurgerMenu
+							activeIndex={activeIndex}
+							setActiveIndex={index => {
+								setActiveIndex(index)
+								setIsMenuOpen(false)
+							}}
+						/>
+					) : (
+						chapters[activeIndex]
+					)}
+				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

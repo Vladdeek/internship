@@ -15,12 +15,13 @@ const Profile = ({ userName, userId, image_path }) => {
 	return (
 		<>
 			<div
-				className='profile absolute right-4 top-3 z-10'
+				className='profile absolute right-4 top-3 z-10 cursor-pointer'
 				style={{
 					borderColor: borderColor,
 					borderWidth: '1px',
 					borderStyle: 'solid',
 				}}
+				onClick={toggleSettings}
 			>
 				<div className='p-con p-3 flex'>
 					<div className='p-info-con flex flex-col items-end'>
@@ -36,12 +37,7 @@ const Profile = ({ userName, userId, image_path }) => {
 						alt=''
 						className='p-image mx-4'
 					/>
-					<img
-						src='icons/vector.svg'
-						alt=''
-						className='p-btn cursor-pointer'
-						onClick={toggleSettings}
-					/>
+					<img src='icons/vector.svg' alt='' className='p-btn ' />
 				</div>
 				{isSettingsOpen && (
 					<div className='p-settings flex flex-col'>

@@ -19,12 +19,12 @@ const Chapter2 = () => {
 					</p>
 
 					<div className=' bg-white flex flex-col gap-5 py-5'>
-						<div className='flex justify-between items-center mr-5'>
-							<p className='text-sm mx-5'>Признак</p>
-							<p className='text-sm w-95 text-center'>Тип признака</p>
-							<p className='text-sm'>Тип документа</p>
-							<p className='text-sm'>Реквизиты</p>
-							<p className='text-sm'>Документ</p>
+						<div className='grid grid-cols-5 lg:grid-cols-7 gap-2 w-full p-5 text-sm items-center text-center max-lg:hidden'>
+							<p className='col-span-1'>Признак</p>
+							<p className='col-span-2 lg:col-span-3'>Тип признака</p>
+							<p className='col-span-1'>Тип документа</p>
+							<p className='col-span-1'>Реквизиты</p>
+							<p className='col-span-1'>Документ</p>
 						</div>
 						<Chap2Comp
 							text1='Якутск'
