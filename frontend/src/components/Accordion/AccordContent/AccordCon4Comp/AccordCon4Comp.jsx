@@ -5,17 +5,19 @@ import './AccordCon4Comp.style.css'
 const AccordCon4Comp = ({ text1, text2_1, text2_2, text3, text4 }) => {
 	return (
 		<>
-			<div className='flex AccordCon4Comp justify-between items-center'>
-				<p className='text-sm mx-5'>{text1}</p>
-				<div className='text-sm w-95 text-center'>
-					<p>{text2_1}</p>
-					<p>{text2_2}</p>
+			<div className='AccordCon4Comp grid grid-cols-12 text-center text-sm'>
+				<div className='grid col-span-11 max-lg:col-span-10 grid-cols-6 max-lg:grid-cols-3 items-center'>
+					<p className='col-span-1 max-lg:col-span-1 max-lg:order-1'>{text1}</p>
+					<div className='col-span-3 max-lg:col-span-4 max-lg:order-4'>
+						<p>{text2_1}</p>
+						<p>{text2_2}</p>
+					</div>
+					<p className='col-span-1 max-lg:col-span-1 max-lg:order-2'>{text3}</p>
+					<p className='col-span-1 max-lg:col-span-1 max-lg:order-3'>{text4}</p>
 				</div>
-				<p className='text-sm'>{text3}</p>
-				<p className='text-sm text-end'>{text4}</p>
-				<div className='flex mx-5'>
-					<img src='icons/edit-btn.svg' alt='' className='edit-btn w-6 mx-3' />
-					<img src='icons/del-btn.svg' alt='' className='del-btn w-6' />
+				<div className='col-span-1 max-lg:col-span-2 flex items-center'>
+					<img src='icons/edit-btn.svg' alt='' className='edit-btn' />
+					<img src='icons/del-btn.svg' alt='' className='del-btn' />
 				</div>
 			</div>
 		</>

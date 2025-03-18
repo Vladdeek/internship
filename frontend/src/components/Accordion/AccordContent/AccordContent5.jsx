@@ -12,10 +12,10 @@ const AccordContent3 = ({
 }) => {
 	return (
 		<>
-			<div className='flex flex-col gap-1 w-full p-5'>
-				<div className='flex gap-3 items-end '>
-					<div className='relative flex flex-col w-1/2'>
-						<label className='ac-input-labels'>
+			<div className='w-full p-5'>
+				<div className='grid gap-3 mb-3 grid-cols-2 max-lg:grid-cols-1'>
+					<div className='relative col-span-1'>
+						<label className='text-base'>
 							Необходимость в общежитии на время учебы (общежитие
 							предоставляется только студентам очной формы обучения):
 						</label>
@@ -31,8 +31,8 @@ const AccordContent3 = ({
 							/>
 						</div>
 					</div>
-					<div className='relative flex flex-col w-1/2'>
-						<label className='ac-input-labels'>Откуда узнали о нас:</label>
+					<div className='relative col-span-1 flex flex-col justify-end'>
+						<label className='text-base'>Откуда узнали о нас:</label>
 						<div className='relative w-full'>
 							<select className='ac-input w-full p-2 pr-10 appearance-none'>
 								<option value='0'>Друзья</option>
@@ -45,12 +45,8 @@ const AccordContent3 = ({
 							/>
 						</div>
 					</div>
-				</div>
-				<div className='flex gap-3 mb-5'>
-					<div className='relative flex flex-col w-full'>
-						<label className='ac-input-labels'>
-							Способ возврата документа:
-						</label>
+					<div className='relative col-span-full'>
+						<label className='text-base'>Способ возврата документа:</label>
 						<div className='relative w-full'>
 							<select className='ac-input w-full p-2 pr-10 appearance-none'>
 								<option value='0'>Выбрать</option>
