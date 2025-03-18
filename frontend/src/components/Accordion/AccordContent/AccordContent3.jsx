@@ -12,10 +12,10 @@ const AccordContent3 = ({
 }) => {
 	return (
 		<>
-			<div className='flex flex-col gap-1 w-full p-5'>
-				<p className='whitespace-nowrap ac-title mb-4'>Адрес регистрации</p>
-				<div className='flex gap-3'>
-					<div className='relative flex flex-col w-1/3'>
+			<div className='p-5 w-full'>
+				<p className='whitespace-nowrap text-xl mb-4'>Адрес регистрации</p>
+				<div className='grid gap-x-3 grid-cols-12 max-lg:grid-cols-6'>
+					<div className='relative col-span-4 max-lg:col-span-3'>
 						<label className='ac-input-labels'>Регион</label>
 						<div className='relative w-full'>
 							<select className='ac-input w-full p-2 pr-10 appearance-none'>
@@ -29,7 +29,7 @@ const AccordContent3 = ({
 							/>
 						</div>
 					</div>
-					<div className='relative flex flex-col w-1/3'>
+					<div className='relative col-span-4 max-lg:col-span-3'>
 						<label className='ac-input-labels'>Область</label>
 						<div className='relative w-full'>
 							<select className='ac-input w-full p-2 pr-10 appearance-none'>
@@ -43,7 +43,7 @@ const AccordContent3 = ({
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col w-1/3'>
+					<div className='col-span-4 max-lg:col-span-3'>
 						<label className='ac-input-labels'>Населенный пункт</label>
 						<input
 							type='text'
@@ -51,34 +51,33 @@ const AccordContent3 = ({
 							value={reg_address_locality}
 						/>
 					</div>
-				</div>
-				<div className='flex gap-3'>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Серия</label>
+
+					<div className='col-span-3 max-lg:col-span-3'>
+						<label className='ac-input-labels'>Улица</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
 							value={reg_address_street}
 						/>
 					</div>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Номер</label>
+					<div className='col-span-3 max-lg:col-span-2'>
+						<label className='ac-input-labels'>Дом</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
 							value={reg_address_house}
 						/>
 					</div>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Код подразделения</label>
+					<div className='col-span-3 max-lg:col-span-2'>
+						<label className='ac-input-labels'>Корпус</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
 							value={reg_address_corpus}
 						/>
 					</div>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Дата выдачи</label>
+					<div className='col-span-3 max-lg:col-span-2'>
+						<label className='ac-input-labels'>Квартира</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
@@ -86,13 +85,13 @@ const AccordContent3 = ({
 						/>
 					</div>
 				</div>
-				<div className='flex gap-4'>
+				<div className='flex max-lg:flex-col mt-4 gap-x-3'>
 					<CheckBox text='Нет улицы ' />
 					<CheckBox text='Адрес регистрации совпадает с адресом фактического проживания' />
 				</div>
-				<p className='whitespace-nowrap ac-title mb-4'>Адрес регистрации</p>
-				<div className='flex gap-3'>
-					<div className='relative flex flex-col w-1/3'>
+				<p className='whitespace-nowrap text-xl mb-4'>Адрес регистрации</p>
+				<div className='grid gap-x-3 grid-cols-12 max-lg:grid-cols-6'>
+					<div className='relative col-span-4 max-lg:col-span-3'>
 						<label className='ac-input-labels'>Регион</label>
 						<div className='relative w-full'>
 							<select className='ac-input w-full p-2 pr-10 appearance-none'>
@@ -106,7 +105,7 @@ const AccordContent3 = ({
 							/>
 						</div>
 					</div>
-					<div className='relative flex flex-col w-1/3'>
+					<div className='relative col-span-4 max-lg:col-span-3'>
 						<label className='ac-input-labels'>Область</label>
 						<div className='relative w-full'>
 							<select className='ac-input w-full p-2 pr-10 appearance-none'>
@@ -120,7 +119,7 @@ const AccordContent3 = ({
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col w-1/3'>
+					<div className='col-span-4 max-lg:col-span-3'>
 						<label className='ac-input-labels'>Населенный пункт</label>
 						<input
 							type='text'
@@ -128,34 +127,33 @@ const AccordContent3 = ({
 							value={reg_address_locality}
 						/>
 					</div>
-				</div>
-				<div className='flex gap-3'>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Серия</label>
+
+					<div className='col-span-3 max-lg:col-span-3'>
+						<label className='ac-input-labels'>Улица</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
 							value={reg_address_street}
 						/>
 					</div>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Номер</label>
+					<div className='col-span-3 max-lg:col-span-2'>
+						<label className='ac-input-labels'>Дом</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
 							value={reg_address_house}
 						/>
 					</div>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Код подразделения</label>
+					<div className='col-span-3 max-lg:col-span-2'>
+						<label className='ac-input-labels'>Корпус</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
 							value={reg_address_corpus}
 						/>
 					</div>
-					<div className='flex flex-col w-1/4'>
-						<label className='ac-input-labels'>Дата выдачи</label>
+					<div className='col-span-3 max-lg:col-span-2'>
+						<label className='ac-input-labels'>Квартира</label>
 						<input
 							type='text'
 							className='ac-input w-full p-2'
