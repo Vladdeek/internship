@@ -10,102 +10,97 @@ const AccordContent2 = ({
 	passport_issued,
 }) => {
 	return (
-		<div className='flex flex-col gap-1 w-full p-5'>
-			<div className='flex gap-3'>
-				<div className='relative flex flex-col w-full'>
-					<label className='ac-input-labels'>Тип документа</label>
-					<div className='relative w-full'>
-						<select className='ac-input w-full p-2 pr-10 appearance-none'>
-							<option value='Russian'>Паспорт РФ</option>
-							<option value='other'>другое...</option>
-						</select>
-						<img
-							src='icons/select-arrow.svg'
-							alt=''
-							className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
-						/>
-					</div>
-				</div>
-			</div>
-			<div className='flex gap-3'>
-				<div className='flex flex-col w-1/4'>
-					<label className='ac-input-labels'>Серия</label>
-					<input
-						type='text'
-						className='ac-input w-full p-2'
-						value={passport_series}
-					/>
-				</div>
-				<div className='flex flex-col w-1/4'>
-					<label className='ac-input-labels'>Номер</label>
-					<input
-						type='text'
-						className='ac-input w-full p-2'
-						value={passport_number}
-					/>
-				</div>
-				<div className='flex flex-col w-1/4'>
-					<label className='ac-input-labels'>Код подразделения</label>
-					<input
-						type='text'
-						className='ac-input w-full p-2'
-						value={passport_code}
-					/>
-				</div>
-				<div className='flex flex-col w-1/4'>
-					<label className='ac-input-labels'>Дата выдачи</label>
-					<input
-						type='text'
-						className='ac-input w-full p-2'
-						value={passport_date}
+		<div className='grid gap-x-3 grid-cols-4 w-full p-5'>
+			<div className='relative col-span-4 max-lg:col-span-4'>
+				<label className='text-sm'>Тип документа</label>
+				<div className='relative w-full'>
+					<select className='ac-input w-full p-2 pr-10 appearance-none'>
+						<option value='Russian'>Паспорт РФ</option>
+						<option value='other'>другое...</option>
+					</select>
+					<img
+						src='icons/select-arrow.svg'
+						alt=''
+						className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
 					/>
 				</div>
 			</div>
-			<div className='flex gap-3'>
-				<div className='flex flex-col w-3/4'>
-					<label className='ac-input-labels'>Кем выдан</label>
-					<input
-						type='text'
-						className='ac-input w-full p-2'
-						value={passport_issued}
+
+			<div className='col-span-1 max-lg:col-span-2'>
+				<label className='text-sm'>Серия</label>
+				<input
+					type='text'
+					className='ac-input w-full p-2'
+					value={passport_series}
+				/>
+			</div>
+			<div className='col-span-1 max-lg:col-span-2'>
+				<label className='text-sm'>Номер</label>
+				<input
+					type='text'
+					className='ac-input w-full p-2'
+					value={passport_number}
+				/>
+			</div>
+			<div className='col-span-1 max-lg:col-span-2'>
+				<label className='text-sm'>Код подразделения</label>
+				<input
+					type='text'
+					className='ac-input w-full p-2'
+					value={passport_code}
+				/>
+			</div>
+			<div className='col-span-1 max-lg:col-span-2'>
+				<label className='text-sm'>Дата выдачи</label>
+				<input
+					type='text'
+					className='ac-input w-full p-2'
+					value={passport_date}
+				/>
+			</div>
+
+			<div className='col-span-3 max-lg:col-span-2'>
+				<label className='text-sm'>Кем выдан</label>
+				<input
+					type='text'
+					className='ac-input w-full p-2'
+					value={passport_issued}
+				/>
+			</div>
+			<div className='col-span-1 flex flex-col max-lg:col-span-2'>
+				<label className='text-sm'>Копия паспорта</label>
+				<label className='ac-input-file text-center p-2 my-1'>
+					Загрузить
+					<input type='file' className='hidden' />
+				</label>
+			</div>
+
+			<div className='relative col-span-1 max-lg:col-span-4'>
+				<label className='text-sm'>Страна рождения</label>
+				<div className='relative w-full'>
+					<select className='ac-input w-full p-2 pr-10 appearance-none'>
+						<option value='Russian'>Россия</option>
+						<option value='other'>другое...</option>
+					</select>
+					<img
+						src='icons/select-arrow.svg'
+						alt=''
+						className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
 					/>
 				</div>
-				<div className='flex flex-col w-1/4'>
-					<label className='ac-input-labels'>Копия паспорта</label>
-					<label className='ac-input-file text-center p-2'>
-						Загрузить
-						<input type='file' className='hidden' />
-					</label>
-				</div>
 			</div>
-			<div className='flex gap-3'>
-				<div className='relative flex flex-col w-1/4'>
-					<label className='ac-input-labels'>Страна рождения</label>
-					<div className='relative w-full'>
-						<select className='ac-input w-full p-2 pr-10 appearance-none'>
-							<option value='Russian'>Паспорт РФ</option>
-							<option value='other'>другое...</option>
-						</select>
-						<img
-							src='icons/select-arrow.svg'
-							alt=''
-							className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
-						/>
-					</div>
-				</div>
-				<div className='relative flex flex-col w-3/4'>
-					<label className='ac-input-labels'>Место рождения</label>
-					<div className='relative w-full'>
-						<select className='ac-input w-full p-2 pr-10 appearance-none'>
-							<option value='Russian'>Мелитопольский р-н, ...</option>
-							<option value='other'>другое...</option>
-						</select>
-						<img
-							src='icons/select-arrow.svg'
-							alt=''
-							className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
-						/>
-					</div>
+			<div className='relative col-span-3 max-lg:col-span-4'>
+				<label className='text-sm'>Место рождения</label>
+				<div className='relative w-full'>
+					<select className='ac-input w-full p-2 pr-10 appearance-none'>
+						<option value='Russian'>Мелитопольский р-н, ...</option>
+						<option value='other'>другое...</option>
+					</select>
+					<img
+						src='icons/select-arrow.svg'
+						alt=''
+						className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
+					/>
 				</div>
 			</div>
 		</div>
