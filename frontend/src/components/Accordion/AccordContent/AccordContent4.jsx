@@ -1,10 +1,10 @@
-import { useState } from 'react'
 import React from 'react'
 import './AccordionContent.style.css'
-import CheckBox from '../../CheckBox/CheckBox'
 import AccordCon4Comp from './AccordCon4Comp/AccordCon4Comp'
+import { useModal } from '../../../pages/modalController'
 
-const AccordContent3 = ({}) => {
+const AccordContent4 = () => {
+	const { setModalActiveIndex, toggleModal } = useModal()
 	const education = [
 		'Среднее общее образование',
 		'Среднее профессиональное образование',
@@ -31,9 +31,16 @@ const AccordContent3 = ({}) => {
 					text4='22.5.2010'
 				/>
 				<div className='flex justify-end mt-4'>
-					<label className=' flex ac-input-file w-46.5 justify-center p-2 mx-5'>
-						<input type='file' className='hidden' />
-						<span>Добавить</span>
+					<label className=' flex input-file-btn w-46.5 justify-center p-2 mx-5'>
+						<button
+							type='button'
+							onClick={() => {
+								setModalActiveIndex(0)
+								toggleModal()
+							}}
+						>
+							Добавить
+						</button>
 						<img src='icons/inputFile_icon.svg' alt='' className='ml-2' />
 					</label>
 				</div>
@@ -42,4 +49,4 @@ const AccordContent3 = ({}) => {
 	)
 }
 
-export default AccordContent3
+export default AccordContent4

@@ -126,7 +126,7 @@ const AccordContent1 = ({
 				</div>
 				<div className='row-span-1 col-span-3 flex flex-col  max-lg:col-span-1 max-lg:order-13'>
 					<label className='text-sm'>Копия СНИЛС</label>
-					<label className='ac-input-file text-center p-2 my-1'>
+					<label className='input-file-btn text-center p-2 my-1'>
 						Загрузить
 						<input type='file' className='hidden' />
 					</label>

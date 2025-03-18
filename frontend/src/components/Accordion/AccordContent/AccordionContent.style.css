@@ -12,8 +12,10 @@
 .ac-profile-image {
 	border-radius: 50%;
 }
-.ac-input-file {
+.input-file-btn {
+	cursor: pointer;
 	border: 1px solid #c10f1a;
+	transition: 0.3s;
 }
 .ac-title {
 	font-size: 20px;

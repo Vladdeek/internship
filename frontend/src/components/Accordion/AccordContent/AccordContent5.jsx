@@ -3,7 +3,7 @@ import React from 'react'
 import './AccordionContent.style.css'
 import CheckBox from '../../CheckBox/CheckBox'
 
-const AccordContent3 = ({
+const AccordContent5 = ({
 	reg_address_locality,
 	reg_address_house,
 	reg_address_street,
@@ -70,4 +70,4 @@ const AccordContent3 = ({
 	)
 }
 
-export default AccordContent3
+export default AccordContent5

@@ -23,7 +23,7 @@ const Chapter3 = () => {
 							</label>
 						</div>
 						<div className='flex justify-end mt-4'>
-							<label className=' flex ac-input-file w-full lg:w-4/9 justify-center p-2'>
+							<label className=' flex input-file-btn w-full lg:w-4/9 justify-center p-2'>
 								<input type='file' className='hidden' />
 								<span>Выбрать документ об образовании</span>
 								<img src='icons/inputFile_icon.svg' alt='' className='ml-2' />

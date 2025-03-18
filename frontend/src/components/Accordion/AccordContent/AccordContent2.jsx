@@ -69,7 +69,7 @@ const AccordContent2 = ({
 			</div>
 			<div className='col-span-1 flex flex-col max-lg:col-span-2'>
 				<label className='text-sm'>Копия паспорта</label>
-				<label className='ac-input-file text-center p-2 my-1'>
+				<label className='input-file-btn text-center p-2 my-1'>
 					Загрузить
 					<input type='file' className='hidden' />
 				</label>

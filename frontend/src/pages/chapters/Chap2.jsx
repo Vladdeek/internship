@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Chap2Comp from './Chap2Comp/Chap2Comp'
 
-const Chapter2 = () => {
+const Chapter2 = ({ setModalActiveIndex, toggleModal }) => {
 	const education = [
 		'Среднее общее образование',
 		'Среднее профессиональное образование',
@@ -43,8 +43,15 @@ const Chapter2 = () => {
 							text5='22.5.2010'
 						/>
 						<div className='flex justify-end mt-4'>
-							<label className=' flex ac-input-file w-46.5 justify-center p-2 mx-5'>
-								<input type='file' className='hidden' />
+							<label className=' flex input-file-btn w-46.5 justify-center p-2 mx-5 '>
+								<input
+									type='submit'
+									className='hidden'
+									onClick={() => {
+										setModalActiveIndex(1)
+										toggleModal()
+									}}
+								/>
 								<span>Добавить</span>
 								<img src='icons/inputFile_icon.svg' alt='' className='ml-2' />
 							</label>

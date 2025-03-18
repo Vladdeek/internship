@@ -58,7 +58,7 @@
 </div>
 <div className='flex flex-col w-1/4'>
     <label className='ac-input-labels'>Копия паспорта</label>
-    <label className='ac-input-file text-center p-2'>
+    <label className='input-file-btn text-center p-2'>
         Загрузить
         <input type='file' className='hidden' />
     </label>
