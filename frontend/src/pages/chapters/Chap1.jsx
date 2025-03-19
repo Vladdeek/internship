@@ -23,16 +23,16 @@ const Chapter1 = ({ handleClick }) => {
 						onToggle={() => handleToggle(0)}
 					>
 						<AccordContent1
-							user_id='1023883828'
-							user_email='example@email.com'
-							user_phone='+79900520670'
-							user_name='Владислав'
-							user_surname='Рязанов'
-							user_patronymic='Денисович'
-							user_birthday='2005-09-27'
-							user_inn='109283476748'
-							user_snils='167-193-541 92'
-							user_date_snils='2020-10-22'
+							user_id=''
+							user_email=''
+							user_phone=''
+							user_name=''
+							user_surname=''
+							user_patronymic=''
+							user_birthday=''
+							user_inn=''
+							user_snils=''
+							user_date_snils=''
 						/>
 					</Accordion>
 					<Accordion
