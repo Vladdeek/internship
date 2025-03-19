@@ -6,7 +6,7 @@ const Chapter6 = () => {
 	return (
 		<>
 			<div className='flex flex-col items-center px-3'>
-				<div className='2xl:w-2/3 mt-13'>
+				<div className='w-full 2xl:max-w-241  mt-13'>
 					<p className='text-xl m-5'>
 						Индивидуальные достижения/Олимпиады/Льготы
 					</p>
