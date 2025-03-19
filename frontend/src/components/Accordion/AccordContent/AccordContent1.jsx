@@ -19,7 +19,7 @@ const AccordContent1 = ({
 	const img_path = ''
 	return (
 		<>
-			<div className='grid 2xl:grid-cols-12 2xl:grid-rows-5 gap-x-3 max-2xl:grid-cols-2 p-5'>
+			<div className='w-full grid 2xl:grid-cols-12 2xl:grid-rows-5 gap-x-3 max-2xl:grid-cols-2 p-5'>
 				<img
 					src={
 						img_path.length === 0

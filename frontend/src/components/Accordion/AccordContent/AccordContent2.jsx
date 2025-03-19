@@ -10,7 +10,7 @@ const AccordContent2 = ({
 	passport_issued,
 }) => {
 	return (
-		<div className='grid gap-x-3 2xl:grid-cols-4 grid-cols-4 w-full p-5'>
+		<div className='w-full grid gap-x-3 2xl:grid-cols-4 grid-cols-4 p-5'>
 			<div className='relative 2xl:col-span-4 col-span-4'>
 				<label className='text-sm'>Тип документа</label>
 				<div className='relative w-full'>

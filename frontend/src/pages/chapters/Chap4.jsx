@@ -19,7 +19,7 @@ const Chapter4 = ({ setModalActiveIndex, toggleModal }) => {
 					</p>
 
 					<div className=' bg-white flex flex-col gap-5 py-5'>
-						<div className='2xl:grid grid-cols-3 lg:grid-cols-6 gap-2 w-full px-5 text-sm items-center text-center hidden'>
+						<div className='xl:grid grid-cols-3 lg:grid-cols-6 gap-2 w-full px-5 text-sm items-center text-center hidden'>
 							<p className='col-span-1 order-1'>Наименование</p>
 							<p className='col-span-1 order-2'>Номер</p>
 							<p className='col-span-1 order-3'>Дата выдачи</p>

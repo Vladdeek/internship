@@ -12,7 +12,7 @@ const Chapter6 = () => {
 					</p>
 
 					<div className=' bg-white flex flex-col gap-5 py-5'>
-						<div className='2xl:grid grid-cols-1 lg:grid-cols-4 gap-2 w-full px-5 text-sm items-center text-center hidden'>
+						<div className='xl:grid grid-cols-1 lg:grid-cols-4 gap-2 w-full px-5 text-sm items-center text-center hidden'>
 							<p className='col-span-1'>Дата комментария</p>
 							<p className='col-span-3'>Текст</p>
 						</div>

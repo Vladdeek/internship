@@ -13,7 +13,7 @@ const AccordContent4 = ({ handleClick }) => {
 	]
 	return (
 		<>
-			<div className='flex flex-col gap-5 w-full py-5'>
+			<div className='flex flex-col gap-5 2xl:w-241 py-5'>
 				<AccordCon4Comp
 					text1='Якутск'
 					text2_1={education[0]}
