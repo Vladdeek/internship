@@ -12,15 +12,17 @@ const SBChapter = ({ image_path, title, isOpen, onToggle }) => {
 					color: isOpen && '#fff',
 					transition: '0.3s',
 				}}
-				className='sb-chapter flex h-12 items-center px-4 select-none cursor-default max-lg:bg-white max-lg:mt-2'
+				className='sb-chapter flex h-12 items-center px-4 select-none cursor-default bg-white lg:bg-transparent max-lg:mt-2'
 			>
 				<img
 					src={image_path}
 					alt=''
-					className={`sbc-icon max-lg:invert-${isOpen ? '0' : '100'}`}
+					className={`sbc-icon lg:invert-0 ${
+						isOpen ? 'invert-0' : 'invert-100'
+					}`}
 				/>
 				<p
-					className={`sbc-title text-white max-lg:text-${
+					className={`sbc-title lg:text-white text-${
 						isOpen ? 'white' : 'black'
 					} text-start mx-6`}
 				>
@@ -29,7 +31,9 @@ const SBChapter = ({ image_path, title, isOpen, onToggle }) => {
 				<img
 					src='icons/vector.svg'
 					alt=''
-					className={`sbc-btn max-lg:invert-${isOpen ? '0' : '100'}`}
+					className={`sbc-btn lg:invert-0 ${
+						isOpen ? 'invert-0' : 'invert-100'
+					}`}
 				/>
 			</div>
 		</>

@@ -1,14 +1,18 @@
 input[type='radio'] {
-	display: none;
+	display: absolute;
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
 }
 
 input[type='radio']:checked + .radio-btn {
-	border-color: #c10f1a;
+	border: 1px solid #c10f1a;
 }
 
 input[type='radio']:not(:checked) + .radio-btn {
-	border-color: #23232333;
+	border: 1px solid #23232333;
 }
+
 .c6-btn {
 	border: 1px solid #c10f1a;
 }

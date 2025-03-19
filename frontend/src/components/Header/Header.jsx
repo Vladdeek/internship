@@ -12,7 +12,7 @@ const Header = ({ burger_btn, toggleMenu, isMenuOpen }) => {
 				alt='menu'
 				onClick={toggleMenu}
 			/>
-			<h1 className='max-lg:hidden h-title self-center'>
+			<h1 className='hidden lg:block h-title self-center'>
 				Личный кабинет абитуриента МелГУ
 			</h1>
 			<Profile userName='Владислав Рязанов' userId='9438513402' image_path='' />

@@ -8,8 +8,8 @@ const AccordContent4 = ({ handleClick }) => {
 		'Среднее профессиональное образование',
 	]
 	const certificate = [
-		'Аттестат о среднем общее образование',
-		'Аттестат о среднем профессиональное образование',
+		'Аттестат о среднем общем образовании',
+		'Аттестат о среднем профессиональном образовании',
 	]
 	return (
 		<>
@@ -29,7 +29,7 @@ const AccordContent4 = ({ handleClick }) => {
 					text4='22.5.2010'
 				/>
 				<div className='flex justify-end mt-4'>
-					<label className=' flex input-file-btn w-46.5 justify-center p-2 mx-5 cursor-pointer'>
+					<label className='flex input-file-btn w-46.5 justify-center p-2 mx-5 cursor-pointer'>
 						<button className='cursor-pointer' onClick={handleClick}>
 							Добавить
 						</button>

@@ -15,7 +15,7 @@ const ModWinCon2 = ({ date_doc, number_doc, serial_doc }) => {
 						<img
 							src='icons/select-arrow.svg'
 							alt=''
-							className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
+							className='absolute right-3 top-1/4 lg:top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
 						/>
 					</div>
 				</div>
@@ -29,7 +29,7 @@ const ModWinCon2 = ({ date_doc, number_doc, serial_doc }) => {
 						<img
 							src='icons/select-arrow.svg'
 							alt=''
-							className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
+							className='absolute right-3 top-1/4 lg:top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
 						/>
 					</div>
 				</div>
@@ -43,7 +43,7 @@ const ModWinCon2 = ({ date_doc, number_doc, serial_doc }) => {
 						<img
 							src='icons/select-arrow.svg'
 							alt=''
-							className='absolute right-3 top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
+							className='absolute right-3 top-1/4 lg:top-1/2 transform -translate-y-1/2 h-5 pointer-events-none'
 						/>
 					</div>
 				</div>

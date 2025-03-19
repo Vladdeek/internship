@@ -4,7 +4,7 @@ import './Styles/Chap3.style.css'
 const Chapter3 = () => {
 	return (
 		<>
-			<div className='flex flex-col items-center max-lg:px-3'>
+			<div className='flex flex-col items-center px-3'>
 				<div className='lg:w-2/3 w-full mt-13'>
 					<p className='text-xl m-5'>Выберите основание поступления</p>
 					<div className='bg-white h-103 p-5 flex flex-col justify-between'>
@@ -17,7 +17,7 @@ const Chapter3 = () => {
 							</label>
 							<label className='w-1/2'>
 								<input type='radio' name='entrance' className='hidden peer' />
-								<span className='radio-btn block py-2 border text-center cursor-pointer transition-all'>
+								<span className='radio-btn block py-2 border text-center cursor-pointer h-full transition-all'>
 									Платное обучение
 								</span>
 							</label>

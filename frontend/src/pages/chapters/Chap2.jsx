@@ -12,14 +12,14 @@ const Chapter2 = ({ setModalActiveIndex, toggleModal }) => {
 	]
 	return (
 		<>
-			<div className='flex flex-col items-center max-lg:px-3'>
+			<div className='flex flex-col items-center px-3'>
 				<div className='lg:w-2/3 mt-13'>
 					<p className='text-xl m-5'>
 						Индивидуальные достижения/Олимпиады/Льготы
 					</p>
 
 					<div className=' bg-white flex flex-col gap-5 py-5'>
-						<div className='grid grid-cols-5 lg:grid-cols-7 gap-2 w-full p-5 text-sm items-center text-center max-lg:hidden'>
+						<div className='lg:grid grid-cols-5 lg:grid-cols-7 gap-2 w-full p-5 text-sm items-center text-center hidden'>
 							<p className='col-span-1'>Признак</p>
 							<p className='col-span-2 lg:col-span-3'>Тип признака</p>
 							<p className='col-span-1'>Тип документа</p>

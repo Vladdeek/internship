@@ -15,7 +15,7 @@ const Chapter1 = ({ handleClick }) => {
 	}
 	return (
 		<>
-			<div className='flex flex-col items-center max-lg:px-3'>
+			<div className='flex flex-col items-center px-3'>
 				<div className='lg:w-2/3'>
 					<Accordion
 						title='Основные данные'

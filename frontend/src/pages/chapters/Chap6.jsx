@@ -5,14 +5,14 @@ import './Styles/Chap3.style.css'
 const Chapter6 = () => {
 	return (
 		<>
-			<div className='flex flex-col items-center max-lg:px-3'>
+			<div className='flex flex-col items-center px-3'>
 				<div className='lg:w-2/3 mt-13'>
 					<p className='text-xl m-5'>
 						Индивидуальные достижения/Олимпиады/Льготы
 					</p>
 
 					<div className=' bg-white flex flex-col gap-5 py-5'>
-						<div className='grid grid-cols-1 lg:grid-cols-4 gap-2 w-full px-5 text-sm items-center text-center max-lg:hidden'>
+						<div className='lg:grid grid-cols-1 lg:grid-cols-4 gap-2 w-full px-5 text-sm items-center text-center hidden'>
 							<p className='col-span-1'>Дата комментария</p>
 							<p className='col-span-3'>Текст</p>
 						</div>
@@ -26,7 +26,7 @@ const Chapter6 = () => {
 								<input
 									type='text'
 									name=''
-									className='c6-input col-span-4 h-18 max-lg:col-span-1'
+									className='c6-input lg:col-span-4 h-18 col-span-1'
 								/>
 								<button className='c6-btn p-2 col-span-1'>Отправить</button>
 							</div>
