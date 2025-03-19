@@ -13,7 +13,7 @@ const AccordContent5 = ({
 	return (
 		<>
 			<div className='w-full p-5'>
-				<div className='grid gap-3 mb-3 grid-cols-2 max-lg:grid-cols-1'>
+				<div className='grid gap-3 mb-3 grid-cols-2 max-2xl:grid-cols-1'>
 					<div className='relative col-span-1'>
 						<label className='text-base'>
 							Необходимость в общежитии на время учебы (общежитие

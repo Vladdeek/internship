@@ -19,7 +19,7 @@ const AccordContent1 = ({
 	const img_path = ''
 	return (
 		<>
-			<div className='grid lg:grid-cols-12 lg:grid-rows-5 gap-x-3 max-lg:grid-cols-2 p-5'>
+			<div className='grid 2xl:grid-cols-12 2xl:grid-rows-5 gap-x-3 max-2xl:grid-cols-2 p-5'>
 				<img
 					src={
 						img_path.length === 0
@@ -27,14 +27,14 @@ const AccordContent1 = ({
 							: user_img_path
 					}
 					alt='...'
-					className='ac-profile-image lg:row-span-2 lg:col-span-2 col-span-2'
+					className='ac-profile-image 2xl:row-span-2 2xl:col-span-2 col-span-2'
 				/>
 
-				<div className='lg:row-span-1 lg:col-span-2 lg:order-1  col-span-1 order-1'>
+				<div className='2xl:row-span-1 2xl:col-span-2 2xl:order-1  col-span-1 order-1'>
 					<label className='text-sm'>Ваш ID:</label>
 					<input type='text' className='ac-input w-full p-2' value={user_id} />
 				</div>
-				<div className='lg:row-span-1 lg:col-span-3 lg:order-2 col-span-2 order-7'>
+				<div className='2xl:row-span-1 2xl:col-span-3 2xl:order-2 col-span-2 order-7'>
 					<label className='text-sm'>Электронная почта</label>
 					<input
 						type='text'
@@ -42,7 +42,7 @@ const AccordContent1 = ({
 						value={user_email}
 					/>
 				</div>
-				<div className='lg:row-span-1 lg:col-span-5 lg:order-3 col-span-1 order-6'>
+				<div className='2xl:row-span-1 2xl:col-span-5 2xl:order-3 col-span-1 order-6'>
 					<label className='text-sm'>Номер телефона</label>
 					<input
 						type='text'
@@ -51,7 +51,7 @@ const AccordContent1 = ({
 					/>
 				</div>
 
-				<div className='lg:row-span-1 lg:col-span-3 lg:order-4  col-span-1 order-3'>
+				<div className='2xl:row-span-1 2xl:col-span-3 2xl:order-4  col-span-1 order-3'>
 					<label className='text-sm'>Фамилия</label>
 					<input
 						type='text'
@@ -59,7 +59,7 @@ const AccordContent1 = ({
 						value={user_surname}
 					/>
 				</div>
-				<div className='lg:row-span-1 lg:col-span-2 lg:order-5  col-span-1 order-2'>
+				<div className='2xl:row-span-1 2xl:col-span-2 2xl:order-5  col-span-1 order-2'>
 					<label className='text-sm'>Имя</label>
 					<input
 						type='text'
@@ -67,7 +67,7 @@ const AccordContent1 = ({
 						value={user_name}
 					/>
 				</div>
-				<div className='lg:row-span-1 lg:col-span-5 lg:order-6  col-span-1 order-4'>
+				<div className='2xl:row-span-1 2xl:col-span-5 2xl:order-6  col-span-1 order-4'>
 					<label className='text-sm'>Отчество</label>
 					<input
 						type='text'
@@ -76,7 +76,7 @@ const AccordContent1 = ({
 					/>
 				</div>
 
-				<div className='lg:row-span-1 lg:col-span-4 lg:order-7  col-span-1 order-5'>
+				<div className='2xl:row-span-1 2xl:col-span-4 2xl:order-7  col-span-1 order-5'>
 					<label className='text-sm'>Дата рождения</label>
 					<input
 						type='text'
@@ -84,7 +84,7 @@ const AccordContent1 = ({
 						value={user_birthday}
 					/>
 				</div>
-				<div className='lg:row-span-1 lg:col-span-4 lg:order-8 col-span-1 order-10'>
+				<div className='2xl:row-span-1 2xl:col-span-4 2xl:order-8 col-span-1 order-10'>
 					<label className='text-sm'>ИНН</label>
 					<input
 						type='password'
@@ -93,7 +93,7 @@ const AccordContent1 = ({
 					/>
 				</div>
 
-				<div className='relative lg:row-span-1 lg:col-span-4 lg:order-9 col-span-2 order-8'>
+				<div className='relative 2xl:row-span-1 2xl:col-span-4 2xl:order-9 col-span-2 order-8'>
 					<label className='text-sm'>Форма подачи заявления</label>
 					<div className='relative w-full'>
 						<select className='ac-input w-full p-2 pr-10 appearance-none'>
@@ -108,7 +108,7 @@ const AccordContent1 = ({
 					</div>
 				</div>
 
-				<div className='lg:row-span-1 lg:col-span-4 lg:order-10 col-span-1 order-11'>
+				<div className='2xl:row-span-1 2xl:col-span-4 2xl:order-10 col-span-1 order-11'>
 					<label className='text-sm'>СНИЛС</label>
 					<input
 						type='text'
@@ -116,7 +116,7 @@ const AccordContent1 = ({
 						value={user_snils}
 					/>
 				</div>
-				<div className='lg:row-span-1 lg:col-span-4 lg:order-11 col-span-1 order-12'>
+				<div className='2xl:row-span-1 2xl:col-span-4 2xl:order-11 col-span-1 order-12'>
 					<label className='text-sm'>Дата СНИЛС</label>
 					<input
 						type='text'
@@ -124,7 +124,7 @@ const AccordContent1 = ({
 						value={user_date_snils}
 					/>
 				</div>
-				<div className='lg:row-span-1 lg:col-span-3 lg:order-12 flex flex-col  col-span-1 order-13'>
+				<div className='2xl:row-span-1 2xl:col-span-3 2xl:order-12 flex flex-col  col-span-1 order-13'>
 					<label className='text-sm'>Копия СНИЛС</label>
 					<label className='input-file-btn text-center p-2 my-1'>
 						Загрузить
@@ -132,7 +132,7 @@ const AccordContent1 = ({
 					</label>
 				</div>
 
-				<div className='relative lg:row-span-1 lg:col-span-8 lg:order-13 col-span-2 order-14'>
+				<div className='relative 2xl:row-span-1 2xl:col-span-8 2xl:order-13 col-span-2 order-14'>
 					<label className='text-sm'>Гражданство</label>
 					<div className='relative w-full'>
 						<select className='ac-input w-full p-2 pr-10 appearance-none'>

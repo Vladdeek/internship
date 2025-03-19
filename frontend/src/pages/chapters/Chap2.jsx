@@ -19,7 +19,7 @@ const Chapter2 = ({ setModalActiveIndex, toggleModal }) => {
 					</p>
 
 					<div className=' bg-white flex flex-col gap-5 py-5'>
-						<div className='lg:grid grid-cols-5 lg:grid-cols-7 gap-2 w-full p-5 text-sm items-center text-center hidden'>
+						<div className='2xl:grid grid-cols-5 lg:grid-cols-7 gap-2 w-full p-5 text-sm items-center text-center hidden'>
 							<p className='col-span-1'>Признак</p>
 							<p className='col-span-2 lg:col-span-3'>Тип признака</p>
 							<p className='col-span-1'>Тип документа</p>
