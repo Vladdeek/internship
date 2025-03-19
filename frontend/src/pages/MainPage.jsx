@@ -61,8 +61,7 @@ const MainPage = () => {
 			</ModalWindow>
 			<div className='flex'>
 				<SideBar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
-				<div className='lg:w-1/5 max-lg:hidden'></div>
-				<div className='w-full lg:w-4/5'>
+				<div className='w-full lg:ml-106'>
 					<Header
 						burger_btn={isMenuOpen ? 'icons/cross.svg' : 'icons/burger.svg'}
 						toggleMenu={toggleMenu}
