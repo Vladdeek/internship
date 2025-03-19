@@ -12,7 +12,7 @@ const SideBar = ({ activeIndex, setActiveIndex }) => {
 		<>
 			<aside className='hidden lg:flex flex-col w-1/5 h-screen justify-between overflow-y-auto fixed'>
 				<div className='sb-top flex flex-col'>
-					<img src='logo.svg' alt='' className='sb-logo' />
+					<img src='logo.png' alt='' className='sb-logo' />
 					<h1 className='sb-title text-white'>Управление</h1>
 					<h2 className='sb-subtitle text-white'>Основные</h2>
 					<div className='chapter-main my-2'>
