@@ -7,7 +7,7 @@ import AccordContent4 from '../../components/Accordion/AccordContent/AccordConte
 import AccordContent5 from '../../components/Accordion/AccordContent/AccordContent5'
 import CheckBox from '../../components/CheckBox/CheckBox'
 
-const Chapter1 = () => {
+const Chapter1 = ({ handleClick }) => {
 	const [activeIndex, setActiveIndex] = useState(null)
 
 	const handleToggle = index => {
@@ -54,7 +54,7 @@ const Chapter1 = () => {
 						isOpen={activeIndex === 3}
 						onToggle={() => handleToggle(3)}
 					>
-						<AccordContent4 />
+						<AccordContent4 handleClick={handleClick} />
 					</Accordion>
 					<Accordion
 						title='Дополнительная информация'

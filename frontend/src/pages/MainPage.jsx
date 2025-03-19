@@ -17,7 +17,7 @@ const MainPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const [isModalOpen, setIsModalOpen] = useState(false)
 	const [activeIndex, setActiveIndex] = useState(0)
-	const [modalActiveIndex, setModalActiveIndex] = useState(0)
+	const [modalActiveIndex, setModalActiveIndex] = useState(null)
 
 	const toggleMenu = () => {
 		setIsMenuOpen(prevState => !prevState)
@@ -26,11 +26,13 @@ const MainPage = () => {
 		setIsModalOpen(prevState => !prevState)
 	}
 
+	const handleClick = () => {
+		setModalActiveIndex(0)
+		toggleModal()
+	}
+
 	const chapters = [
-		<Chapter1
-			setModalActiveIndex={setModalActiveIndex}
-			toggleModal={toggleModal}
-		/>,
+		<Chapter1 handleClick={handleClick} />,
 		<Chapter2
 			setModalActiveIndex={setModalActiveIndex}
 			toggleModal={toggleModal}
@@ -49,7 +51,9 @@ const MainPage = () => {
 	return (
 		<>
 			<ModalWindow
-				modal_title='Выберите документ'
+				modal_title={`Добавление документа ${
+					modalActiveIndex === 0 ? 'об образовании' : ''
+				}`}
 				toggleModal={toggleModal}
 				isModalOpen={isModalOpen}
 			>

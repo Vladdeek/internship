@@ -2,7 +2,7 @@ import React from 'react'
 import './AccordionContent.style.css'
 import AccordCon4Comp from './AccordCon4Comp/AccordCon4Comp'
 
-const AccordContent4 = () => {
+const AccordContent4 = ({ handleClick }) => {
 	const education = [
 		'Среднее общее образование',
 		'Среднее профессиональное образование',
@@ -29,14 +29,8 @@ const AccordContent4 = () => {
 					text4='22.5.2010'
 				/>
 				<div className='flex justify-end mt-4'>
-					<label className=' flex input-file-btn w-46.5 justify-center p-2 mx-5'>
-						<button
-							type='button'
-							onClick={() => {
-								setModalActiveIndex(0)
-								toggleModal()
-							}}
-						>
+					<label className=' flex input-file-btn w-46.5 justify-center p-2 mx-5 cursor-pointer'>
+						<button className='cursor-pointer' onClick={handleClick}>
 							Добавить
 						</button>
 						<img src='icons/inputFile_icon.svg' alt='' className='ml-2' />
