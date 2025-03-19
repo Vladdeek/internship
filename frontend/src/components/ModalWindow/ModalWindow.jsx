@@ -1,7 +1,7 @@
-import React, { Children } from 'react'
+import React from 'react'
 import './ModalWindow.css'
 
-const ModalWindow = ({ modal_title, Children, toggleModal, isModalOpen }) => {
+const ModalWindow = ({ modal_title, children, toggleModal, isModalOpen }) => {
 	return (
 		<>
 			{isModalOpen && (
@@ -16,7 +16,7 @@ const ModalWindow = ({ modal_title, Children, toggleModal, isModalOpen }) => {
 								className='cursor-pointer'
 							/>
 						</div>
-						<div className='w-full'>{Children}</div>
+						<div className='w-full'>{children}</div>
 					</div>
 				</div>
 			)}

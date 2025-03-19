@@ -1,10 +1,8 @@
 import React from 'react'
 import './AccordionContent.style.css'
 import AccordCon4Comp from './AccordCon4Comp/AccordCon4Comp'
-import { useModal } from '../../../pages/modalController'
 
 const AccordContent4 = () => {
-	const { setModalActiveIndex, toggleModal } = useModal()
 	const education = [
 		'Среднее общее образование',
 		'Среднее профессиональное образование',
