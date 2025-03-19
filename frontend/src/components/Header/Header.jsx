@@ -15,6 +15,7 @@ const Header = ({ burger_btn, toggleMenu, isMenuOpen }) => {
 			<h1 className='hidden lg:block h-title self-center'>
 				Личный кабинет абитуриента МелГУ
 			</h1>
+			<img src='Russia.svg' alt='' className='h-5 self-center mr-60 lg:mr-65' />
 			<Profile userName='Владислав Рязанов' userId='9438513402' image_path='' />
 		</header>
 	)

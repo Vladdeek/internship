@@ -12,7 +12,7 @@ const SBChapter = ({ image_path, title, isOpen, onToggle }) => {
 					color: isOpen && '#fff',
 					transition: '0.3s',
 				}}
-				className='sb-chapter flex h-12 items-center px-4 select-none cursor-default bg-white lg:bg-transparent max-lg:mt-2'
+				className='sb-chapter flex h-12 items-center px-4 select-none cursor-default bg-white lg:bg-transparent lg:mt-0 mt-2'
 			>
 				<img
 					src={image_path}
